@@ -6,7 +6,10 @@ public class Boss2 extends GameEntity {
         this.setName(name);
         this.setDamage(damage);
         this.setHealth(health);
+    }
 
+    public String info() {
 
+        return super.info();
     }
 }

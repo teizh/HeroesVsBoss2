@@ -1,7 +1,7 @@
 public class GameEntity {
     private String name;
-    private static int health;
-    private static int damage;
+    private  int health;
+    private  int damage;
     private static WeaponType weaponType;
 
 
@@ -37,4 +37,11 @@ public class GameEntity {
     public void setDamage(int damage) {
         this.damage = damage;
     }
+    public String info() {
+        return "Name: " + this.name + " Health: "
+                + this.health+ " Damage: " + this.damage+ " Weapon: " + getWeaponType();
+    }
+
+
 }
+
