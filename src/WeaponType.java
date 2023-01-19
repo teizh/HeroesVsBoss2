@@ -1,5 +1,5 @@
 public enum WeaponType {
 
-    SWORD(),HUMMER(), BOWANDARROWS();
+    SWORD(), HUMMER(), BOWANDARROWS();
 
 }

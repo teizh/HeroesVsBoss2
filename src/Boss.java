@@ -1,35 +1,15 @@
-public class Boss {
-    private int health;
-    private int damage;
-    private  String armorType;
+public class Boss extends GameEntity {
 
-    public Boss(int health, int damage, String armorType) {
-        this.health = health;
-        this.damage = damage;
-        this.armorType = armorType;
+    public Boss(WeaponType weaponType, String name, int damage, int health) {
+        super();
+        this.setWeaponType(weaponType);
+        this.setName(name);
+        this.setDamage(damage);
+        this.setHealth(health);
     }
 
-    public void setHealth(int health) {
-        this.health = health;
-    }
+    public String info() {
 
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
-
-    public void setArmorType(String armorType) {
-        this.armorType = armorType;
-    }
-
-    public int getHealth() {
-        return health;
-    }
-
-    public int getDamage() {
-        return damage;
-    }
-
-    public String getArmorType() {
-        return armorType;
+        return super.info();
     }
 }

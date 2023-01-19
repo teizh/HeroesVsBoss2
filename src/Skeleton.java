@@ -1,5 +1,6 @@
-public class Skeleton extends Boss2{
+public class Skeleton extends Boss {
     private int numberOfArrows;
+
     public Skeleton(WeaponType weaponType, String name, int damage, int health, int numberOfArrows) {
         super(weaponType, name, damage, health);
 
@@ -17,7 +18,7 @@ public class Skeleton extends Boss2{
 
     public String info() {
 
-        return super.info()+" Number of arrows: "+this.numberOfArrows;
+        return super.info() + " Number of arrows: " + this.numberOfArrows;
     }
 
 }
